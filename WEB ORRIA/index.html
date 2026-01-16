@@ -1,11 +1,54 @@
 <!DOCTYPE html>
 <html lang="eu">
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Hau Skoda Mena Hiru enpresaren orri nagusia da.">
     <meta name="author" content="Urko Mendibe Capellán">
+    <title>Skoda Mena Hiru - Orri Nagusia</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="js/index.js" defer></script>
+</head>
 
-    <header></header>
-    <main></main>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/skoda_logo.png" alt="Skoda Mena Hiru Logo">
+        </div>
+
+        <h1 class="logo-text">Skoda Mena Hiru</h1>
+
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Orri nagusia</a></li>
+                <li><a href="about.html">Produktuak</a></li>
+                <li><a href="contact.html">Konfigurazioa</a></li>
+                <li><a href="contact.html">Finantziak</a></li>
+                <li><a href="contact.html">Lokalizazioa</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="modeloak">
+            <div class="modelo_nabarmenak">
+                <img id="hasierakoArgazkia" src="img/kotxeak/octavia.png" alt="Skoda Octavia">
+            </div>
+            <h2 class="orriNagusi_textua"></h2>
+            <section class="botoiak">
+                <button id="atzera_botoia" onclick="atzeraIrudia()">
+                    <img src="img/flecha_izquierda.png" alt="Aurreko pelikula">
+                </button>
+                <button id="aurrera_botoia" onclick="hurrengoIrudia()">
+                    <img src="img/flecha_derecha.png" alt="Hurrengo pelikula">
+                </button>
+            </section>
+        </div>
+    </main>
+
     <footer></footer>
+</body>
+
 </html>

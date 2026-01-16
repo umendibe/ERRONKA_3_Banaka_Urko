@@ -72,19 +72,20 @@ main {
 .modelo_nabarmenak {
     width: 100%;
     max-width: 500px;
-    height: auto;
+    height: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 20px;
     overflow: hidden;
     border-radius: 10px;
+    background-color: #fff;
 }
 
 .modelo_nabarmenak img {
     width: 100%;
-    height: auto;
-    object-fit: cover;
+    height: 100%;
+    object-fit: contain;
     transition: transform 0.3s ease;
 }
 

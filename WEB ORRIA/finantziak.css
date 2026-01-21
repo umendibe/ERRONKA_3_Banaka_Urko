@@ -1,0 +1,416 @@
+/* Finantziak orriko estilo nagusiak */
+.finantza-edukiontzia {
+    padding: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.section-title {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.azalpena {
+    text-align: center;
+    color: #666;
+    font-size: 1.1em;
+    margin-bottom: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Kalkulagailu orokorra */
+.kalkulagailu-orokorra {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 30px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    color: white;
+}
+
+.sarrera-kontrola {
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.sarrera-kontrola:last-child {
+    margin-bottom: 0;
+}
+
+.kontrola-etiketa {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.ehuneko-testua {
+    color: #FFD700;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.zenbaki-sarrera {
+    width: calc(100% - 50px);
+    padding: 12px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.9);
+    font-weight: bold;
+}
+
+.euro-ikurra {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Slider estiloak */
+.slider {
+    width: 100%;
+    height: 8px;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.3);
+    outline: none;
+    -webkit-appearance: none;
+    cursor: pointer;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #FFD700;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #FFD700;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.slider-balioak {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-size: 0.9em;
+    opacity: 0.9;
+}
+
+.sarrera-balioa {
+    color: #FFD700;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+/* Plan edukiontzia */
+.plan-edukiontzia {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+/* Finantza karta */
+.finantza-karta {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.finantza-karta:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.plan-gomendatua {
+    border: 3px solid #4CAF50;
+}
+
+.gomendapen-etiketa {
+    position: absolute;
+    top: 15px;
+    right: -35px;
+    background: #4CAF50;
+    color: white;
+    padding: 5px 40px;
+    font-weight: bold;
+    font-size: 0.85em;
+    transform: rotate(45deg);
+    z-index: 10;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Karta goiburua */
+.karta-goiburua {
+    padding: 25px;
+    color: white;
+    text-align: center;
+}
+
+.plan-arrunta {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.plan-premium {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+}
+
+.plan-izena {
+    font-size: 1.8em;
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+
+.plan-deskribapena {
+    font-size: 1em;
+    opacity: 0.95;
+    margin-bottom: 15px;
+}
+
+.interes-tasa {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px 20px;
+    border-radius: 25px;
+    backdrop-filter: blur(10px);
+}
+
+.tasa-zenbakia {
+    font-size: 2em;
+    font-weight: 800;
+    margin-right: 5px;
+}
+
+.tasa-testua {
+    font-size: 0.9em;
+    opacity: 0.9;
+}
+
+/* Karta gorputza */
+.karta-gorputza {
+    padding: 25px;
+}
+
+/* Hilabete kontrola */
+.hilabete-kontrola {
+    margin-bottom: 25px;
+}
+
+.hilabete-aukerak {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.hilabete-botoia {
+    flex: 1;
+    min-width: 60px;
+    padding: 12px 0;
+    border: 2px solid #ddd;
+    background: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.hilabete-botoia:hover {
+    border-color: #4CAF50;
+    background-color: #f0f8f0;
+}
+
+.hilabete-botoia.aktibo {
+    border-color: #4CAF50;
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Emaitza sekzioa */
+.emaitza-sekzioa {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.emaitza-lerroa {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.emaitza-lerroa:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.emaitza-etiketa {
+    color: #666;
+    font-size: 0.95em;
+}
+
+.emaitza-balioa {
+    font-weight: 600;
+    color: #333;
+}
+
+.interes-kolorea {
+    color: #f5576c;
+}
+
+.nabarmentua {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 15px;
+    margin: 15px -20px;
+    border-radius: 8px;
+    border-bottom: none;
+}
+
+.nabarmentua .emaitza-etiketa,
+.nabarmentua .kuota-handia {
+    color: white;
+}
+
+.hileko-etiketa {
+    font-size: 1.1em;
+    font-weight: 700;
+}
+
+.kuota-handia {
+    font-size: 1.8em;
+    font-weight: 800;
+    color: #FFD700;
+}
+
+.guztira-handia {
+    font-size: 1.3em;
+    color: #4CAF50;
+}
+
+/* Hautatu botoia */
+.hautatu-botoia {
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2em;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.hautatu-botoia:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+}
+
+.premium-botoia {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+}
+
+.premium-botoia:hover {
+    box-shadow: 0 6px 20px rgba(245, 87, 108, 0.4);
+}
+
+/* Abantailak sekzioa */
+.abantailak-sekzioa {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.abantailak-titulua {
+    text-align: center;
+    color: #333;
+    font-size: 1.8em;
+    margin-bottom: 25px;
+}
+
+.abantaila-zerrenda {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.abantaila-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    border-left: 4px solid #4CAF50;
+}
+
+.abantaila-ikonoa {
+    font-size: 1.5em;
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .plan-edukiontzia {
+        grid-template-columns: 1fr;
+    }
+
+    .abantaila-zerrenda {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .finantza-edukiontzia {
+        padding: 10px;
+    }
+
+    .section-title {
+        font-size: 2em;
+    }
+
+    .kalkulagailu-orokorra {
+        padding: 20px;
+    }
+
+    .karta-gorputza {
+        padding: 15px;
+    }
+
+    .hilabete-aukerak {
+        gap: 5px;
+    }
+
+    .hilabete-botoia {
+        min-width: 50px;
+        padding: 10px 0;
+        font-size: 0.9em;
+    }
+}

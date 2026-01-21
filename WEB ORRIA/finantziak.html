@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="eu">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Finantzatu zure Skoda kotxea.">
+    <meta name="author" content="Urko Mendibe Capellán">
+    <title>Skoda Mena Hiru - Finantziak</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="finantziak.css">
+    <script src="js/finantziak.js" defer></script>
+    <link rel="icon" href="img/skoda_logo.png">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/skoda_logo.png" alt="Skoda Mena Hiru Logo">
+        </div>
+
+        <h1 class="logo-text">Skoda Mena Hiru</h1>
+
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Orri nagusia</a></li>
+                <li><a href="produktuak.html">Produktuak</a></li>
+                <li><a href="konfigurazioa.html">Konfigurazioa</a></li>
+                <li><a href="finantziak.html">Finantziak</a></li>
+                <li><a href="contact.html">Lokalizazioa</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="finantza-edukiontzia">
+            <h2 class="section-title">Finantzatu Zure Kotxea</h2>
+            <p class="azalpena">Sartu kotxearen prezioa eta aukeratu hilabete kopurua.</p>
+
+            <!-- Kotxearen prezioa -->
+            <div class="kalkulagailu-orokorra">
+                <div class="sarrera-kontrola">
+                    <label for="kotxe-prezioa" class="kontrola-etiketa">
+                        <strong>Kotxearen Prezioa:</strong>
+                    </label>
+                    <input type="number" id="kotxe-prezioa" class="zenbaki-sarrera" value="25000" min="10000"
+                        max="100000" step="1000">
+                    <span class="euro-ikurra">€</span>
+                </div>
+            </div>
+
+            <!-- Bi finantziaketa planak -->
+            <div class="plan-edukiontzia">
+
+                <!-- PLAN ARRUNTA -->
+                <div class="finantza-karta">
+                    <div class="karta-goiburua plan-arrunta">
+                        <h3 class="plan-izena">Plan Arrunta</h3>
+                        <p class="plan-deskribapena">Baldintza normalak</p>
+                        <div class="interes-tasa">
+                            <span class="tasa-zenbakia">6%</span>
+                            <span class="tasa-testua">interesa</span>
+                        </div>
+                    </div>
+
+                    <div class="karta-gorputza">
+                        <!-- Hilabete hautaketa -->
+                        <div class="hilabete-kontrola">
+                            <label class="kontrola-etiketa">
+                                <strong>Hilabete kopurua:</strong>
+                            </label>
+                            <div class="hilabete-aukerak">
+                                <button class="hilabete-botoia aktibo" data-plan="arrunta"
+                                    data-hilabeteak="12">12</button>
+                                <button class="hilabete-botoia" data-plan="arrunta" data-hilabeteak="24">24</button>
+                                <button class="hilabete-botoia" data-plan="arrunta" data-hilabeteak="36">36</button>
+                            </div>
+                        </div>
+
+                        <div class="emaitza-sekzioa">
+                            <div class="emaitza-lerroa">
+                                <span class="emaitza-etiketa">Kotxearen prezioa:</span>
+                                <span id="finantzatua-arrunta" class="emaitza-balioa">25,000€</span>
+                            </div>
+                            <div class="emaitza-lerroa">
+                                <span class="emaitza-etiketa">Hilabete kopurua:</span>
+                                <span id="hilabeteak-arrunta" class="emaitza-balioa">12 hilabete</span>
+                            </div>
+                            <div class="emaitza-lerroa">
+                                <span class="emaitza-etiketa">Interesak guztira:</span>
+                                <span id="interesak-arrunta" class="emaitza-balioa interes-kolorea">600€</span>
+                            </div>
+                            <div class="emaitza-lerroa nabarmentua">
+                                <span class="emaitza-etiketa hileko-etiketa">Hileko kuota:</span>
+                                <span id="kuota-arrunta" class="kuota-handia">1,717€/hilean</span>
+                            </div>
+                            <div class="emaitza-lerroa">
+                                <span class="emaitza-etiketa">Prezio osoa:</span>
+                                <span id="guztira-arrunta" class="emaitza-balioa guztira-handia">25,600€</span>
+                            </div>
+                        </div>
+
+                        <button class="hautatu-botoia" data-plan="arrunta">Hautatu Plan Hau</button>
+                    </div>
+                </div>
+
+                <!-- PLAN PREMIUM -->
+                <div class="finantza-karta plan-gomendatua">
+                    <div class="gomendapen-etiketa">⭐ GOMENDATUA</div>
+                    <div class="karta-goiburua plan-premium">
+                        <h3 class="plan-izena">Plan Premium</h3>
+                        <p class="plan-deskribapena">Baldintza hobeak</p>
+                        <div class="interes-tasa">
+                            <span class="tasa-zenbakia">4%</span>
+                            <span class="tasa-testua">interesa</span>
+                        </div>
+                    </div>
+
+                    <div class="karta-gorputza">
+                        <!-- Hilabete hautaketa -->
+                        <div class="hilabete-kontrola">
+                            <label class="kontrola-etiketa">
+                                <strong>Hilabete kopurua:</strong>
+                            </label>
+                            <div class="hilabete-aukerak">
+                                <button class="hilabete-botoia" data-plan="premium" data-hilabeteak="12">12</button>
+                                <button class="hilabete-botoia aktibo" data-plan="premium"
+                                    data-hilabeteak="24">24</button>
+                                <button class="hilabete-botoia" data-plan="premium" data-hilabeteak="36">36</button>
+                            </div>
+                        </div>
+
+                        <div class="emaitza-sekzioa">
+                            <div class="emaitza-lerroa">
+                                <span class="emaitza-etiketa">Kotxearen prezioa:</span>
+                                <span id="finantzatua-premium" class="emaitza-balioa">25,000€</span>
+                            </div>
+                            <div class="emaitza-lerroa">
+                                <span class="emaitza-etiketa">Hilabete kopurua:</span>
+                                <span id="hilabeteak-premium" class="emaitza-balioa">36 hilabete</span>
+                            </div>
+                            <div class="emaitza-lerroa">
+                                <span class="emaitza-etiketa">Interesak guztira:</span>
+                                <span id="interesak-premium" class="emaitza-balioa interes-kolorea">1,200€</span>
+                            </div>
+                            <div class="emaitza-lerroa nabarmentua">
+                                <span class="emaitza-etiketa hileko-etiketa">Hileko kuota:</span>
+                                <span id="kuota-premium" class="kuota-handia">589€/hilean</span>
+                            </div>
+                            <div class="emaitza-lerroa">
+                                <span class="emaitza-etiketa">Prezio osoa:</span>
+                                <span id="guztira-premium" class="emaitza-balioa guztira-handia">26,200€</span>
+                            </div>
+                        </div>
+
+                        <button class="hautatu-botoia premium-botoia" data-plan="premium">Hautatu Plan Hau</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Abantaila informazioa -->
+            <div class="abantailak-sekzioa">
+                <h3 class="abantailak-titulua">Gure Finantziaketa Planen Abantailak</h3>
+                <div class="abantaila-zerrenda">
+                    <div class="abantaila-item">
+                        <span class="abantaila-ikonoa">✓</span>
+                        <span>Aurre-ordainketarik gabe ere</span>
+                    </div>
+                    <div class="abantaila-item">
+                        <span class="abantaila-ikonoa">✓</span>
+                        <span>Kuota finkoa hilero</span>
+                    </div>
+                    <div class="abantaila-item">
+                        <span class="abantaila-ikonoa">✓</span>
+                        <span>Erantzun azkarra</span>
+                    </div>
+                    <div class="abantaila-item">
+                        <span class="abantaila-ikonoa">✓</span>
+                        <span>Prozedura erraza</span>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-kontenidoa">
+            <div class="footer-sekzio1">
+                <h3>Skoda Mena Hiru</h3>
+                <p>Zure Skoda kontzesionario fidagarria.</p>
+            </div>
+            <div class="footer-nabigazioa">
+                <h4>Lotura interesgarriak</h4>
+                <ul>
+                    <li><a href="index.html">Orri nagusia</a></li>
+                    <li><a href="produktuak.html">Produktuak</a></li>
+                    <li><a href="contact.html">Kontaktua</a></li>
+                </ul>
+            </div>
+            <div class="footer-kontaktua">
+                <h4>Kontaktua</h4>
+                <p>Email: info@skodamenahiru.eus</p>
+                <p>Tel: +34 900 000 000</p>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>&copy; 2026 Skoda Mena Hiru. Eskubide guztiak erreserbatuta.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

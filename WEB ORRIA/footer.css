@@ -1,0 +1,61 @@
+footer {
+    background-color: #333;
+    color: white;
+    padding: 40px 20px 20px;
+    margin-top: 40px;
+}
+
+.footer-kontenidoa {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 30px;
+}
+
+.footer-sekzio1 {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-sekzio1 h3,
+.footer-sekzio1 h4 {
+    color: #4CAF50;
+    /* Skoda-like green */
+    margin-bottom: 20px;
+}
+
+.footer-nabigazioa ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-nabigazioa ul li {
+    margin-bottom: 10px;
+}
+
+.footer-nabigazioa ul li a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-nabigazioa ul li a:hover {
+    color: white;
+}
+
+.footer-nabigazioa p {
+    color: #ccc;
+    font-size: 0.9em;
+    line-height: 1.6;
+}
+
+.footer-copyright {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #444;
+    font-size: 0.8em;
+    color: #888;
+}

@@ -1,0 +1,133 @@
+/* Lokalizazio orriko estiloak */
+.lokalizazio-edukiontzia {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.azalpena {
+    text-align: center;
+    color: #666;
+    font-size: 1.1em;
+    margin-bottom: 40px;
+}
+
+/* Lokalizazio zerrenda */
+.lokalizazio-zerrenda {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+/* Lokalizazio karta */
+.lokalizazio-karta {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.lokalizazio-karta:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Karta goiburua */
+.karta-goiburua {
+    background: linear-gradient(135deg, #4CAF50 0%, #2E7D32 100%);
+    padding: 20px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lokalizazio-izena {
+    font-size: 1.3em;
+    margin: 0;
+    font-weight: 600;
+}
+
+/* Lokalizazio mota etiketa */
+.lokalizazio-mota {
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.85em;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.kontzesionarioa {
+    background-color: rgba(255, 255, 255, 0.25);
+    border: 2px solid white;
+}
+
+.tailerra {
+    background-color: rgba(255, 193, 7, 0.9);
+    color: #333;
+    border: 2px solid #FFC107;
+}
+
+/* Karta gorputza */
+.karta-gorputza {
+    padding: 25px;
+}
+
+.info-lerroa {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 15px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.info-lerroa:last-child {
+    margin-bottom: 0;
+}
+
+.ikurra {
+    font-size: 1.2em;
+    flex-shrink: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .lokalizazio-edukiontzia {
+        padding: 10px;
+    }
+
+    .section-title {
+        font-size: 2em;
+    }
+
+    .lokalizazio-zerrenda {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .lokalizazio-izena {
+        font-size: 1.1em;
+    }
+
+    .karta-goiburua {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .lokalizazio-mota {
+        align-self: flex-start;
+    }
+}

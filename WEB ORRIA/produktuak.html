@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="footer.css">
-    <script src="js/index.js" defer></script>
+    <link rel="stylesheet" href="produktuak.css">
+    <script src="js/produktuak.js" defer></script>
     <link rel="icon" href="img/skoda_logo.png">
 </head>
 
@@ -34,23 +35,24 @@
     </header>
 
     <main>
-        <h2 class="nabarmenak-testua">SALMENTA NABARMENAK</h2>
-        <div class="ereduak">
-            <div class="eredu_nabarmenak">
-                <img id="hasierakoArgazkia" src="img/kotxeak/octavia.png" alt="Skoda Octavia">
-            </div>
-            <h2 class="orriNagusi_testua"></h2>
-            <section class="botoiak">
-                <button id="atzera_botoia" onclick="atzeraIrudia()">
-                    <img src="img/flecha_izquierda.png" alt="Aurreko pelikula">
-                </button>
-                <button id="aurrera_botoia" onclick="hurrengoIrudia()">
-                    <img src="img/flecha_derecha.png" alt="Hurrengo pelikula">
-                </button>
-            </section>
-        </div>
-    </main>
+        <section class="produktu-edukiontzia">
+            <h2 class="section-title">Gure Modeloak</h2>
 
+            <div id="iragazkiak" class="iragazkiak">
+                <button class="iragazki-botoia aktibo" data-iragazkia="guztiak">Guztiak</button>
+                <button class="iragazki-botoia" data-iragazkia="octavia">Octavia</button>
+                <button class="iragazki-botoia" data-iragazkia="superb">Superb</button>
+                <button class="iragazki-botoia" data-iragazkia="enyaq">Enyaq</button>
+                <button class="iragazki-botoia" data-iragazkia="kodiaq">Kodiaq</button>
+                <button class="iragazki-botoia" data-iragazkia="elroq">Elroq</button>
+                <button class="iragazki-botoia" data-iragazkia="besteak">Besteak</button>
+            </div>
+
+            <div id="produktu-sarea" class="produktu-sarea">
+                <!-- Produktuak JS bidez txertatuko dira hemen -->
+            </div>
+        </section>
+    </main>
     <footer>
         <div class="footer-kontenidoa">
             <div class="footer-sekzio1">
@@ -61,7 +63,7 @@
                 <h4>Lotura interesgarriak</h4>
                 <ul>
                     <li><a href="index.html">Orri nagusia</a></li>
-                    <li><a href="produktuak.html">Produktuak</a></li>
+                    <li><a href="productuak.html">Produktuak</a></li>
                     <li><a href="contact.html">Kontaktua</a></li>
                 </ul>
             </div>

@@ -18,7 +18,7 @@ let index = 0;
 
 /* HTML dokumentutik irudi elementua hartu */
 const img = document.getElementById('hasierakoArgazkia');
-const tituluak = document.querySelector('.orriNagusi_textua');
+const testuak = document.querySelector('.orriNagusi_testua');
 
 /* ==========================
    IRUDIA EGUNERATZEKO FUNTZIOA
@@ -27,7 +27,7 @@ const tituluak = document.querySelector('.orriNagusi_textua');
 function eguneratuArgazkia() {
     if (!img) return; // Elementua ez badago, ez egin ezer
     img.src = images[index].src; // Irudi berriaren bidea jarri
-    tituluak.textContent = images[index].text; // Testua eguneratu
+    testuak.textContent = images[index].text; // Testua eguneratu
 
     img.classList.add('fade-out'); // Fade efektua gehitu
 

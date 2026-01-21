@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="eu">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Konfiguratu zure Skoda kotxea.">
+    <meta name="author" content="Urko Mendibe Capellán">
+    <title>Skoda Mena Hiru - Konfigurazioa</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="konfigurazioa.css">
+    <script src="js/konfigurazioa.js" defer></script>
+    <link rel="icon" href="img/skoda_logo.png">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/skoda_logo.png" alt="Skoda Mena Hiru Logo">
+        </div>
+
+        <h1 class="logo-text">Skoda Mena Hiru</h1>
+
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Orri nagusia</a></li>
+                <li><a href="produktuak.html">Produktuak</a></li>
+                <li><a href="konfigurazioa.html">Konfigurazioa</a></li>
+                <li><a href="contact.html">Finantziak</a></li>
+                <li><a href="contact.html">Lokalizazioa</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="konfigurazio-edukiontzia">
+            <h2 class="section-title">Konfiguratu Zure Kotxea</h2>
+
+            <div class="konfigurazio-saila">
+                <!-- Ezkerreko aldea: Aukerak -->
+                <div class="aukera-panela">
+
+                    <!-- Eredua aukeratu -->
+                    <div class="aukera-sekzioa">
+                        <h3 class="aukera-titulua">1. Eredua Aukeratu</h3>
+                        <select id="eredua-hautatu" class="hautaketa">
+                            <option value="">-- Aukeratu eredua --</option>
+                            <option value="octavia">Skoda Octavia</option>
+                            <option value="superb">Skoda Superb</option>
+                            <option value="enyaq">Skoda Enyaq (Elektrikoa)</option>
+                            <option value="kodiaq">Skoda Kodiaq</option>
+                            <option value="fabia">Skoda Fabia</option>
+                        </select>
+                    </div>
+
+                    <!-- Kolorea aukeratu -->
+                    <div class="aukera-sekzioa">
+                        <h3 class="aukera-titulua">2. Kolorea Aukeratu</h3>
+                        <div class="kolore-aukerak">
+                            <button class="kolore-botoia" data-kolorea="zuria" data-prezioa="0"
+                                style="background-color: #ffffff; border: 2px solid #ccc;"></button>
+                            <button class="kolore-botoia" data-kolorea="beltza" data-prezioa="200"
+                                style="background-color: #000000;"></button>
+                            <button class="kolore-botoia" data-kolorea="grisa" data-prezioa="100"
+                                style="background-color: #808080;"></button>
+                            <button class="kolore-botoia" data-kolorea="gorria" data-prezioa="300"
+                                style="background-color: #c41e3a;"></button>
+                            <button class="kolore-botoia" data-kolorea="urdina" data-prezioa="250"
+                                style="background-color: #0066cc;"></button>
+                            <button class="kolore-botoia" data-kolorea="berdea" data-prezioa="250"
+                                style="background-color: #4CAF50;"></button>
+                        </div>
+                        <p class="hautapen-testua"><strong>Aukeratutako kolorea:</strong> <span
+                                id="kolore-testua">Hautatu kolorea</span></p>
+                    </div>
+
+                    <!-- Motorea aukeratu -->
+                    <div class="aukera-sekzioa">
+                        <h3 class="aukera-titulua">3. Motorea Aukeratu</h3>
+                        <div class="motor-aukerak">
+                            <label class="motor-karta">
+                                <input type="radio" name="motorea" value="1.0 TSI" data-prezioa="0">
+                                <div class="motor-edukia">
+                                    <h4>1.0 TSI</h4>
+                                    <p>95 CV - Gasolina</p>
+                                    <p class="prezio-etiketa">+0€</p>
+                                </div>
+                            </label>
+                            <label class="motor-karta">
+                                <input type="radio" name="motorea" value="1.5 TSI" data-prezioa="2000">
+                                <div class="motor-edukia">
+                                    <h4>1.5 TSI</h4>
+                                    <p>150 CV - Gasolina</p>
+                                    <p class="prezio-etiketa">+2,000€</p>
+                                </div>
+                            </label>
+                            <label class="motor-karta">
+                                <input type="radio" name="motorea" value="2.0 TDI" data-prezioa="3000">
+                                <div class="motor-edukia">
+                                    <h4>2.0 TDI</h4>
+                                    <p>150 CV - Diesel</p>
+                                    <p class="prezio-etiketa">+3,000€</p>
+                                </div>
+                            </label>
+                            <label class="motor-karta">
+                                <input type="radio" name="motorea" value="Elektrikoa" data-prezioa="5000">
+                                <div class="motor-edukia">
+                                    <h4>Elektrikoa</h4>
+                                    <p>204 CV - 100% Elektrikoa</p>
+                                    <p class="prezio-etiketa">+5,000€</p>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Gehigarriak -->
+                    <div class="aukera-sekzioa">
+                        <h3 class="aukera-titulua">4. Gehigarriak</h3>
+                        <div class="gehigarri-zerrenda">
+                            <label class="gehigarri-item">
+                                <input type="checkbox" class="gehigarri-checkbox" data-izena="Laster-kontrola adaptiboa"
+                                    data-prezioa="800">
+                                <span>Laster-kontrola adaptiboa</span>
+                                <span class="gehigarri-prezioa">+800€</span>
+                            </label>
+                            <label class="gehigarri-item">
+                                <input type="checkbox" class="gehigarri-checkbox" data-izena="Igiteko teilatua"
+                                    data-prezioa="1200">
+                                <span>Igiteko teilatua</span>
+                                <span class="gehigarri-prezioa">+1,200€</span>
+                            </label>
+                            <label class="gehigarri-item">
+                                <input type="checkbox" class="gehigarri-checkbox" data-izena="Larru eserlekuak"
+                                    data-prezioa="1500">
+                                <span>Larru eserlekuak</span>
+                                <span class="gehigarri-prezioa">+1,500€</span>
+                            </label>
+                            <label class="gehigarri-item">
+                                <input type="checkbox" class="gehigarri-checkbox" data-izena="Sistema audio premium"
+                                    data-prezioa="900">
+                                <span>Sistema audio premium</span>
+                                <span class="gehigarri-prezioa">+900€</span>
+                            </label>
+                            <label class="gehigarri-item">
+                                <input type="checkbox" class="gehigarri-checkbox" data-izena="Nabigazio sistema"
+                                    data-prezioa="600">
+                                <span>Nabigazio sistema</span>
+                                <span class="gehigarri-prezioa">+600€</span>
+                            </label>
+                            <label class="gehigarri-item">
+                                <input type="checkbox" class="gehigarri-checkbox" data-izena="Atzealdeko kamera"
+                                    data-prezioa="400">
+                                <span>Atzealdeko kamera</span>
+                                <span class="gehigarri-prezioa">+400€</span>
+                            </label>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Eskuineko aldea: Laburpena -->
+                <div class="laburpen-panela">
+                    <div class="laburpen-txartela">
+                        <h3 class="laburpen-titulua">Konfigurazio Laburpena</h3>
+
+                        <div class="laburpen-elementua">
+                            <span class="laburpen-etiketa">Eredua:</span>
+                            <span id="laburpen-eredua" class="laburpen-balioa">Hautatu eredua</span>
+                        </div>
+
+                        <div class="laburpen-elementua">
+                            <span class="laburpen-etiketa">Kolorea:</span>
+                            <span id="laburpen-kolorea" class="laburpen-balioa">Hautatu kolorea</span>
+                        </div>
+
+                        <div class="laburpen-elementua">
+                            <span class="laburpen-etiketa">Motorea:</span>
+                            <span id="laburpen-motorea" class="laburpen-balioa">Hautatu motorea</span>
+                        </div>
+
+                        <div class="laburpen-elementua">
+                            <span class="laburpen-etiketa">Gehigarriak:</span>
+                            <div id="laburpen-gehigarriak" class="laburpen-balioa">Ez dago gehigarririk</div>
+                        </div>
+
+                        <hr class="laburpen-banatzailea">
+
+                        <div class="prezio-guztira">
+                            <span class="prezio-etiketa-handia">PREZIO OSOA:</span>
+                            <span id="prezio-guztira" class="prezio-zenbakia">0€</span>
+                        </div>
+
+                        <button id="eskaera-bidali" class="eskaera-botoia">Eskaera Bidali</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-kontenidoa">
+            <div class="footer-sekzio1">
+                <h3>Skoda Mena Hiru</h3>
+                <p>Zure Skoda kontzesionario fidagarria.</p>
+            </div>
+            <div class="footer-nabigazioa">
+                <h4>Lotura interesgarriak</h4>
+                <ul>
+                    <li><a href="index.html">Orri nagusia</a></li>
+                    <li><a href="produktuak.html">Produktuak</a></li>
+                    <li><a href="contact.html">Kontaktua</a></li>
+                </ul>
+            </div>
+            <div class="footer-kontaktua">
+                <h4>Kontaktua</h4>
+                <p>Email: info@skodamenahiru.eus</p>
+                <p>Tel: +34 900 000 000</p>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>&copy; 2026 Skoda Mena Hiru. Eskubide guztiak erreserbatuta.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,325 @@
+/* Konfigurazio orriko estilo nagusiak */
+.konfigurazio-edukiontzia {
+    padding: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.section-title {
+    text-align: center;
+    color: #333;
+    margin-bottom: 40px;
+    font-size: 2.5em;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Konfigurazio saila */
+.konfigurazio-saila {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+/* Ezkerreko panela - Aukerak */
+.aukera-panela {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.aukera-sekzioa {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.aukera-titulua {
+    color: #333;
+    font-size: 1.4em;
+    margin-bottom: 20px;
+    font-weight: 600;
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 10px;
+}
+
+/* Hautaketa dropdown */
+.hautaketa {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 1.1em;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    background-color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.hautaketa:hover {
+    border-color: #4CAF50;
+}
+
+.hautaketa:focus {
+    outline: none;
+    border-color: #4CAF50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.3);
+}
+
+/* Kolore aukerak */
+.kolore-aukerak {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+.kolore-botoia {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.kolore-botoia:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.kolore-botoia.hautatuta {
+    border-color: #4CAF50;
+    box-shadow: 0 0 15px rgba(76, 175, 80, 0.6);
+    transform: scale(1.15);
+}
+
+.hautapen-testua {
+    color: #666;
+    font-size: 1em;
+    margin-top: 10px;
+}
+
+/* Motor aukerak */
+.motor-aukerak {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.motor-karta {
+    position: relative;
+    cursor: pointer;
+}
+
+.motor-karta input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+}
+
+.motor-edukia {
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+    background-color: white;
+}
+
+.motor-edukia h4 {
+    color: #333;
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+
+.motor-edukia p {
+    color: #666;
+    margin: 5px 0;
+}
+
+.motor-karta:hover .motor-edukia {
+    border-color: #4CAF50;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.motor-karta input[type="radio"]:checked+.motor-edukia {
+    border-color: #4CAF50;
+    background-color: #f0f8f0;
+    box-shadow: 0 0 15px rgba(76, 175, 80, 0.3);
+}
+
+.prezio-etiketa {
+    color: #4CAF50;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+/* Gehigarriak */
+.gehigarri-zerrenda {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.gehigarri-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: white;
+}
+
+.gehigarri-item:hover {
+    border-color: #4CAF50;
+    background-color: #f9f9f9;
+}
+
+.gehigarri-checkbox {
+    margin-right: 15px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.gehigarri-checkbox:checked~span {
+    color: #4CAF50;
+    font-weight: 600;
+}
+
+.gehigarri-prezioa {
+    color: #4CAF50;
+    font-weight: bold;
+    margin-left: auto;
+}
+
+/* Eskuineko panela - Laburpena */
+.laburpen-panela {
+    position: sticky;
+    top: 20px;
+    height: fit-content;
+}
+
+.laburpen-txartela {
+    background: linear-gradient(135deg, #69696a 0%, #a7a6a8 100%);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    color: white;
+}
+
+.laburpen-titulua {
+    font-size: 1.6em;
+    margin-bottom: 25px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.laburpen-elementua {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.laburpen-etiketa {
+    font-weight: 600;
+    opacity: 0.9;
+}
+
+.laburpen-balioa {
+    text-align: right;
+    font-weight: 500;
+}
+
+.laburpen-banatzailea {
+    border: none;
+    border-top: 2px solid rgba(255, 255, 255, 0.3);
+    margin: 20px 0;
+}
+
+.prezio-guztira {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px 0;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+}
+
+.prezio-etiketa-handia {
+    font-size: 1.3em;
+    font-weight: 700;
+}
+
+.prezio-zenbakia {
+    font-size: 2em;
+    font-weight: 800;
+    color: #FFD700;
+}
+
+.eskaera-botoia {
+    width: 100%;
+    padding: 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2em;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+}
+
+.eskaera-botoia:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.eskaera-botoia:active {
+    transform: translateY(0);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .konfigurazio-saila {
+        grid-template-columns: 1fr;
+    }
+
+    .laburpen-panela {
+        position: relative;
+        top: 0;
+    }
+
+    .motor-aukerak {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .konfigurazio-edukiontzia {
+        padding: 10px;
+    }
+
+    .section-title {
+        font-size: 2em;
+    }
+
+    .aukera-sekzioa {
+        padding: 15px;
+    }
+
+    .kolore-botoia {
+        width: 50px;
+        height: 50px;
+    }
+}
